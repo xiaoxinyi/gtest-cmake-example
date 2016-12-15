@@ -31,6 +31,7 @@ if (test)
   # This adds another subdirectory, which has 'project(gtest)'.
   add_subdirectory(lib/gtest-1.7.0)
 
+  # CMake will generate tests only if the enable_testing() command has been invoked.
   enable_testing()
 
   # Include the gtest library. gtest_SOURCE_DIR is available due to
